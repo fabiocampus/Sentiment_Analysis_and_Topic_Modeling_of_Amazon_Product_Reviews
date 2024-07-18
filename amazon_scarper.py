@@ -7,7 +7,8 @@ class Reviews:
     def __init__(self, asin):
         self.asin = asin
         self.session = HTMLSession()
-        self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'}
+        self.headers = {'User-Agent': 'your_user_agent'}
+        # in questo caso, MacBook
         self.url = f'https://www.amazon.co.uk/Apple-MacBook-Chip-13-inch-256GB/product-reviews/{self.asin}/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber='
 
     def pagination(self, num_page):
